@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mhetre Tower Gym | Elite Fitness Club</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#07070a;
+
+/* 💎 LUXURY COLOR SYSTEM */
+--primary:#ffffff;          /* clean white */
+--secondary:#c7b08b;        /* champagne gold (luxury tone) */
+--accent:#8b1020;           /* deep crimson wine */
+--muted:#b5b5b5;
+
+--card:rgba(255,255,255,0.04);
+--border:rgba(255,255,255,0.08);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter;
+}
+
+body{
+background:var(--bg);
+color:var(--primary);
+overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 10%;
+background:rgba(10,10,12,0.6);
+backdrop-filter:blur(20px);
+border-bottom:1px solid var(--border);
+z-index:1000;
+}
+
+nav h2{
+color:var(--accent);
+font-weight:800;
+letter-spacing:1px;
+}
+
+nav a{
+color:var(--muted);
+margin:0 12px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:var(--secondary);
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.95)),
+url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438');
+background-size:cover;
+background-position:center;
+}
+
+.hero-card{
+padding:65px;
+background:var(--card);
+backdrop-filter:blur(25px);
+border:1px solid var(--border);
+border-radius:28px;
+max-width:800px;
+box-shadow:0 0 80px rgba(0,0,0,0.5);
+}
+
+.hero h1{
+font-size:66px;
+font-weight:800;
+color:var(--primary);
+letter-spacing:1px;
+}
+
+.hero h1 span{
+color:var(--accent);
+}
+
+.hero p{
+margin-top:12px;
+color:var(--muted);
+font-size:16px;
+}
+
+/* BUTTON */
+.btn{
+margin-top:25px;
+padding:15px 46px;
+border:none;
+border-radius:50px;
+background:linear-gradient(135deg,var(--accent),#b41a30);
+color:var(--primary);
+font-weight:700;
+cursor:pointer;
+transition:0.3s;
+letter-spacing:0.5px;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* SECTION */
+section{
+padding:110px 10%;
+text-align:center;
+}
+
+h2{
+font-size:40px;
+margin-bottom:55px;
+color:var(--primary);
+font-weight:700;
+}
+
+h2 span{
+color:var(--secondary);
+}
+
+/* GRID */
+.grid{
+display:flex;
+gap:28px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+/* CARD */
+.card{
+width:340px;
+border-radius:22px;
+overflow:hidden;
+background:var(--card);
+border:1px solid var(--border);
+transition:0.35s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border:1px solid var(--secondary);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+filter:contrast(1.1) saturate(1.05);
+}
+
+.card p{
+padding:18px;
+color:var(--primary);
+font-weight:500;
+}
+
+/* STATS */
+.stats{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.stat{
+padding:22px;
+width:210px;
+border-radius:16px;
+background:rgba(255,255,255,0.03);
+border:1px solid var(--border);
+}
+
+.stat b{
+color:var(--accent);
+font-size:22px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:22px;
+right:22px;
+width:62px;
+height:62px;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:26px;
+text-decoration:none;
+color:white;
+z-index:9999;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{font-size:38px;}
+.grid{flex-direction:column;}
+.card{width:92%;}
+nav{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h2>Mhetre Tower Gym</h2>
+<div>
+<a href="#dashboard">Dashboard</a>
+<a href="#programs">Programs</a>
+<a href="#pricing">Pricing</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-card">
+<h1>Mhetre <span>Tower</span> Gym</h1>
+<p>Elite Fitness Experience • Jule Solapur</p>
+<button class="btn">Join Premium Membership</button>
+</div>
+</div>
+
+<!-- DASHBOARD -->
+<section id="dashboard">
+<h2>Live <span>Performance</span></h2>
+
+<div class="stats">
+<div class="stat">Members<br><b>128</b></div>
+<div class="stat">Revenue<br><b>₹2.4L</b></div>
+<div class="stat">Trainers<br><b>8</b></div>
+<div class="stat">Growth<br><b>92%</b></div>
+</div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs">
+<h2>Elite <span>Training</span></h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+<p>Strength Engineering System</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550345332-09e3ac987658">
+<p>Body Transformation Program</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<p>Fat Burn Optimization</p>
+</div>
+
+</div>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919876543210" class="whatsapp">💬</a>
+
+</body>
+</html>
