@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mhetre Tower Gym | Elite Fitness Brand</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 10%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(18px);
+z-index:1000;
+border-bottom:1px solid rgba(212,175,55,0.2);
+}
+
+nav h2{
+color:#d4af37;
+font-weight:800;
+}
+
+nav a{
+color:#ddd;
+margin:0 12px;
+text-decoration:none;
+font-size:14px;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
+url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438');
+background-size:cover;
+background-position:center;
+}
+
+.hero-card{
+padding:50px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(18px);
+border:1px solid rgba(212,175,55,0.2);
+border-radius:25px;
+box-shadow:0 0 60px rgba(212,175,55,0.08);
+}
+
+.hero h1{
+font-size:70px;
+color:#d4af37;
+font-weight:900;
+}
+
+.hero p{
+color:#ccc;
+margin-top:15px;
+}
+
+.btn{
+margin-top:25px;
+padding:15px 45px;
+border:none;
+border-radius:50px;
+background:linear-gradient(45deg,#d4af37,#ffcc70);
+color:black;
+font-weight:700;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* SECTION */
+section{
+padding:100px 10%;
+text-align:center;
+}
+
+h2{
+font-size:42px;
+color:#d4af37;
+margin-bottom:50px;
+}
+
+/* GRID */
+.grid{
+display:flex;
+gap:25px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+/* CARDS */
+.card{
+width:260px;
+border-radius:18px;
+overflow:hidden;
+background:rgba(255,255,255,0.04);
+backdrop-filter:blur(15px);
+border:1px solid rgba(212,175,55,0.2);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-12px);
+border:1px solid #d4af37;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card p{
+padding:15px;
+color:#ddd;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:26px;
+text-decoration:none;
+color:white;
+z-index:9999;
+}
+
+/* BOTTOM NAV */
+.bottom-nav{
+position:fixed;
+bottom:0;
+width:100%;
+display:flex;
+justify-content:space-around;
+background:black;
+padding:12px;
+border-top:1px solid #d4af37;
+}
+
+.bottom-nav a{
+color:white;
+text-decoration:none;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{font-size:40px;}
+.grid{flex-direction:column;}
+.card{width:90%;}
+nav{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h2>Mhetre Tower Gym</h2>
+<div>
+<a href="#programs">Programs</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-card">
+<h1>Elite Fitness Club</h1>
+<p>Mhetre Tower Gym • Jule Solapur, Solapur</p>
+
+<a href="https://rzp.io/l/your-payment-link">
+<button class="btn">Join Premium</button>
+</a>
+</div>
+</div>
+
+<!-- PROGRAMS -->
+<section id="programs">
+<h2>Training Programs</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74">
+<p>Strength Training</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712">
+<p>Bodybuilding</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<p>Cardio Fat Burn</p>
+</div>
+
+</div>
+</section>
+
+<!-- LIFESTYLE -->
+<section>
+<h2>Fitness Lifestyle</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd">
+<p>Gym Motivation</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+<p>Strength Culture</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598971639058-a8f9b5b9f2d1">
+<p>Body Transformation</p>
+</div>
+
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+<h2>Membership Plans</h2>
+
+<div class="grid">
+<div class="card"><p>Silver ₹999</p></div>
+<div class="card"><p>Gold ₹1999</p></div>
+<div class="card"><p>Platinum ₹2999</p></div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<p>📍 Mhetre Tower Gym, Jule Solapur, Solapur</p>
+<p>📞 +91 9876543210</p>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919876543210" class="whatsapp">💬</a>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+<a href="#">🏠</a>
+<a href="#programs">🏋️</a>
+<a href="#pricing">💰</a>
+<a href="#contact">📍</a>
+</div>
+
+</body>
+</html>
