@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mhetre Tower Gym | Luxury Fitness Club</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#050505;
+color:#f5d77a;
+overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,0.5);
+backdrop-filter:blur(20px);
+z-index:1000;
+border-bottom:1px solid rgba(245,215,122,0.25);
+}
+
+nav h2{
+color:#f5d77a;
+font-weight:900;
+letter-spacing:1px;
+}
+
+nav a{
+color:#f5d77a;
+margin:0 12px;
+text-decoration:none;
+font-size:14px;
+opacity:0.8;
+}
+
+nav a:hover{
+opacity:1;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.95)),
+url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48');
+background-size:cover;
+background-position:center;
+}
+
+.hero-card{
+padding:60px;
+background:rgba(255,255,255,0.04);
+backdrop-filter:blur(22px);
+border:1px solid rgba(245,215,122,0.25);
+border-radius:28px;
+box-shadow:0 0 80px rgba(245,215,122,0.08);
+}
+
+.hero h1{
+font-size:75px;
+font-weight:900;
+color:#f5d77a;
+letter-spacing:2px;
+}
+
+.hero p{
+color:#e6d7a3;
+margin-top:15px;
+font-size:18px;
+}
+
+.btn{
+margin-top:25px;
+padding:16px 50px;
+border:none;
+border-radius:50px;
+background:linear-gradient(45deg,#f5d77a,#ffea9c);
+color:black;
+font-weight:800;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+/* SECTIONS */
+section{
+padding:110px 10%;
+text-align:center;
+}
+
+h2{
+font-size:46px;
+color:#f5d77a;
+margin-bottom:60px;
+letter-spacing:1px;
+}
+
+/* GRID */
+.grid{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+/* CARD (BIGGER + LUXURY) */
+.card{
+width:320px;
+border-radius:22px;
+overflow:hidden;
+background:rgba(255,255,255,0.03);
+backdrop-filter:blur(18px);
+border:1px solid rgba(245,215,122,0.2);
+transition:0.4s;
+box-shadow:0 0 40px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+transform:translateY(-14px) scale(1.03);
+border:1px solid #f5d77a;
+box-shadow:0 0 60px rgba(245,215,122,0.15);
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+filter:contrast(1.1) saturate(1.1);
+}
+
+.card p{
+padding:18px;
+font-size:16px;
+color:#f5d77a;
+font-weight:600;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:22px;
+right:22px;
+width:62px;
+height:62px;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:26px;
+text-decoration:none;
+color:white;
+z-index:9999;
+box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+/* BOTTOM NAV */
+.bottom-nav{
+position:fixed;
+bottom:0;
+width:100%;
+display:flex;
+justify-content:space-around;
+background:black;
+padding:14px;
+border-top:1px solid #f5d77a;
+}
+
+.bottom-nav a{
+color:#f5d77a;
+text-decoration:none;
+font-weight:600;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{font-size:42px;}
+.grid{flex-direction:column;}
+.card{width:92%;}
+nav{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h2>Mhetre Tower Gym</h2>
+<div>
+<a href="#programs">Programs</a>
+<a href="#lifestyle">Lifestyle</a>
+<a href="#pricing">Pricing</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-card">
+<h1>Luxury Fitness Club</h1>
+<p>Mhetre Tower Gym • Jule Solapur, Solapur</p>
+
+<a href="https://rzp.io/l/your-payment-link">
+<button class="btn">Join Premium</button>
+</a>
+</div>
+</div>
+
+<!-- PROGRAMS -->
+<section id="programs">
+<h2>Elite Training Programs</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74">
+<p>Strength Training Pro</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712">
+<p>Bodybuilding Elite</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<p>Cardio Fat Burn</p>
+</div>
+
+</div>
+</section>
+
+<!-- LIFESTYLE -->
+<section id="lifestyle">
+<h2>Transformation Lifestyle</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48">
+<p>Gym Discipline</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550345332-09e3ac987658">
+<p>Strength Culture</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba">
+<p>Body Transformation</p>
+</div>
+
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+<h2>Membership Plans</h2>
+
+<div class="grid">
+<div class="card"><p>Silver ₹999</p></div>
+<div class="card"><p>Gold ₹1999</p></div>
+<div class="card"><p>Platinum ₹2999</p></div>
+</div>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919876543210" class="whatsapp">💬</a>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+<a href="#">🏠</a>
+<a href="#programs">🏋️</a>
+<a href="#lifestyle">🔥</a>
+<a href="#pricing">💰</a>
+</div>
+
+</body>
+</html>
