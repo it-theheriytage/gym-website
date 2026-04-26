@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mhetre Tower Gym | Premium Fitness</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins;}
+
+body{
+background:#0b0b0b;
+color:white;
+}
+
+/* HERO */
+header{
+height:100vh;
+position:relative;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+iframe{
+position:absolute;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+}
+
+.overlay{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:20px;
+}
+
+h1{
+font-size:65px;
+color:#d4af37;
+}
+
+.btn{
+padding:15px 35px;
+background:#d4af37;
+border:none;
+border-radius:30px;
+cursor:pointer;
+margin-top:20px;
+}
+
+/* SECTIONS */
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+h2{
+color:#d4af37;
+margin-bottom:30px;
+}
+
+/* CARDS */
+.grid{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:#111;
+padding:25px;
+width:250px;
+border-radius:15px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:25px;
+text-decoration:none;
+}
+
+/* BOTTOM NAV (APP STYLE) */
+.bottom-nav{
+position:fixed;
+bottom:0;
+width:100%;
+display:flex;
+justify-content:space-around;
+background:black;
+padding:10px;
+border-top:1px solid #d4af37;
+}
+
+.bottom-nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+/* CHATBOT */
+#chatbot{
+position:fixed;
+left:20px;
+bottom:90px;
+background:#111;
+padding:10px;
+border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎥 YOUTUBE BACKGROUND -->
+<header>
+<iframe 
+src="https://www.youtube.com/embed/dJpE2iZ3G7A?autoplay=1&mute=1&loop=1&playlist=dJpE2iZ3G7A"
+frameborder="0"
+allow="autoplay; fullscreen">
+</iframe>
+
+<div class="overlay">
+<h1>Mhetre Tower Gym</h1>
+<p>Jule Solapur, Solapur</p>
+
+<!-- 💰 PAYMENT BUTTON (RAZORPAY LINK) -->
+<a href="https://rzp.io/l/your-payment-link">
+<button class="btn">Join & Pay</button>
+</a>
+</div>
+</header>
+
+<!-- PROGRAMS -->
+<section>
+<h2>Programs</h2>
+<div class="grid">
+<div class="card">Fat Loss</div>
+<div class="card">Muscle Gain</div>
+<div class="card">Strength Training</div>
+</div>
+</section>
+
+<!-- TRAINERS -->
+<section>
+<h2>Trainers</h2>
+<div class="grid">
+<div class="card">Certified Coach</div>
+<div class="card">Nutrition Expert</div>
+<div class="card">Personal Trainer</div>
+</div>
+</section>
+
+<!-- CONTACT FORM (GOOGLE SHEETS READY) -->
+<section>
+<h2>Join Now</h2>
+
+<form action="YOUR_GOOGLE_SCRIPT_URL" method="POST">
+<input placeholder="Name" name="name"><br><br>
+<input placeholder="Phone" name="phone"><br><br>
+<button class="btn">Submit</button>
+</form>
+</section>
+
+<!-- 🤖 CHATBOT -->
+<div id="chatbot">
+💬 AI Trainer<br>
+<button onclick="alert('Ask: diet, workout, weight loss 💪')">Chat</button>
+</div>
+
+<!-- 💬 WHATSAPP -->
+<a href="https://wa.me/919876543210" class="whatsapp">💬</a>
+
+<!-- 📱 BOTTOM NAV -->
+<div class="bottom-nav">
+<a href="#">🏠</a>
+<a href="#programs">🏋️</a>
+<a href="#contact">📍</a>
+</div>
+
+</body>
+</html>
