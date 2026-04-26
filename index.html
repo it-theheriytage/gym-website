@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mhetre Tower Gym | Enterprise Fitness Platform</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#070707;
+color:#b3122d; /* DARK BOTTLE RED */
+overflow-x:hidden;
+}
+
+/* NAV (SAAS STYLE) */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 10%;
+background:rgba(10,0,0,0.6);
+backdrop-filter:blur(20px);
+border-bottom:1px solid rgba(179,18,45,0.3);
+z-index:1000;
+}
+
+nav h2{
+color:#b3122d;
+font-weight:900;
+letter-spacing:1px;
+}
+
+nav a{
+color:#cfcfcf;
+margin:0 12px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#b3122d;
+}
+
+/* HERO DASHBOARD STYLE */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.95)),
+url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61');
+background-size:cover;
+background-position:center;
+}
+
+.hero-panel{
+padding:60px;
+background:rgba(179,18,45,0.08);
+backdrop-filter:blur(25px);
+border:1px solid rgba(179,18,45,0.35);
+border-radius:28px;
+box-shadow:0 0 90px rgba(179,18,45,0.15);
+}
+
+.hero h1{
+font-size:72px;
+font-weight:900;
+color:#b3122d;
+letter-spacing:2px;
+}
+
+.hero p{
+color:#d0d0d0;
+margin-top:15px;
+font-size:18px;
+}
+
+.btn{
+margin-top:25px;
+padding:16px 50px;
+border:none;
+border-radius:50px;
+background:linear-gradient(45deg,#b3122d,#ff3b5c);
+color:white;
+font-weight:800;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+/* SECTION (ENTERPRISE CARDS) */
+section{
+padding:110px 10%;
+text-align:center;
+}
+
+h2{
+font-size:44px;
+color:#b3122d;
+margin-bottom:60px;
+}
+
+/* GRID */
+.grid{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+/* ENTERPRISE CARDS */
+.card{
+width:330px;
+border-radius:22px;
+overflow:hidden;
+background:rgba(179,18,45,0.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(179,18,45,0.25);
+transition:0.4s;
+box-shadow:0 0 40px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+transform:translateY(-14px) scale(1.03);
+border:1px solid #b3122d;
+box-shadow:0 0 80px rgba(179,18,45,0.2);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+filter:contrast(1.15) saturate(1.1);
+}
+
+.card p{
+padding:18px;
+font-size:15px;
+color:#e0e0e0;
+font-weight:500;
+}
+
+/* STATUS PANEL (ENTERPRISE FEEL) */
+.status-panel{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.status{
+background:rgba(179,18,45,0.07);
+padding:20px;
+border-radius:15px;
+border:1px solid rgba(179,18,45,0.2);
+width:200px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:22px;
+right:22px;
+width:62px;
+height:62px;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:26px;
+text-decoration:none;
+color:white;
+z-index:9999;
+}
+
+/* BOTTOM NAV */
+.bottom-nav{
+position:fixed;
+bottom:0;
+width:100%;
+display:flex;
+justify-content:space-around;
+background:#0a0000;
+padding:14px;
+border-top:1px solid #b3122d;
+}
+
+.bottom-nav a{
+color:#b3122d;
+text-decoration:none;
+font-weight:600;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{font-size:40px;}
+.grid{flex-direction:column;}
+.card{width:92%;}
+nav{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h2>Mhetre Gym OS</h2>
+<div>
+<a href="#dashboard">Dashboard</a>
+<a href="#programs">Programs</a>
+<a href="#members">Members</a>
+<a href="#billing">Billing</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-panel">
+<h1>Enterprise Fitness OS</h1>
+<p>Mhetre Tower Gym • Jule Solapur</p>
+
+<button class="btn">Open Member Panel</button>
+</div>
+</div>
+
+<!-- DASHBOARD STATS -->
+<section id="dashboard">
+<h2>Live System Status</h2>
+
+<div class="status-panel">
+<div class="status">Active Members<br><b>128</b></div>
+<div class="status">Monthly Revenue<br><b>₹2.4L</b></div>
+<div class="status">Trainers<br><b>8</b></div>
+<div class="status">Attendance<br><b>92%</b></div>
+</div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs">
+<h2>Training Modules</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+<p>Strength Engineering System</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550345332-09e3ac987658">
+<p>Body Transformation Engine</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<p>Cardio Optimization</p>
+</div>
+
+</div>
+</section>
+
+<!-- MEMBERS -->
+<section id="members">
+<h2>Member Experience</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+<p>Progress Tracking System</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598971639058-a8f9b5b9f2d1">
+<p>AI Coaching Structure</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712">
+<p>Elite Training Zone</p>
+</div>
+
+</div>
+</section>
+
+<!-- BILLING -->
+<section id="billing">
+<h2>Billing & Membership</h2>
+
+<div class="status-panel">
+<div class="status">Basic Plan<br>₹999</div>
+<div class="status">Pro Plan<br>₹1999</div>
+<div class="status">Elite Plan<br>₹2999</div>
+</div>
+
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919876543210" class="whatsapp">💬</a>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+<a href="#">🏠</a>
+<a href="#dashboard">📊</a>
+<a href="#programs">🏋️</a>
+<a href="#billing">💰</a>
+</div>
+
+</body>
+</html>
